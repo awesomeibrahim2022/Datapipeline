@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: dim_marketing_client
+    description: Marketing-oriented client dimension with project completion counters.
+    columns:
+      - name: client_id
+        tests: [not_null, unique]
+      - name: client_name
+        tests: [not_null]
+
+  - name: fct_marketing_project_pipeline
+    description: Project pipeline fact for marketing performance and margin estimates.
+    columns:
+      - name: project_id
+        tests: [not_null, unique]
+      - name: client_id
+        tests: [not_null]
+
+  - name: fct_marketing_client_feedback
+    description: Flattened feedback feed from ClientFeedbackInitial source.
+    columns:
+      - name: feedback_id
+        tests: [not_null, unique]
