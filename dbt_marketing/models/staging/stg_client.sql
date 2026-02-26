@@ -1,7 +1,7 @@
 select
-    clientid as client_id,
+    cast(clientid as varchar) as client_id,
     client_name,
-    locationid as location_id,
+    cast(locationid as varchar) as location_id,
     phone_number,
     lower(email) as email,
     last_update

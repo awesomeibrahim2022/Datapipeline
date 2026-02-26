@@ -31,8 +31,13 @@ dbt run
 dbt test
 ```
 
-## 3) Produced marts
+## 3) Raw tables expected
+
+`BusinessUnit`, `Client`, `ClientFeedbackInitial`, `Consultant`, `ConsultantDeliverable`, `ConsultantTitleHistory`, `Deliverable`, `IndirectCosts`, `Location`, `NonBillable`, `Payroll`, `Project`, `ProjectBillingRate`, `ProjectExpense`, `ProjectTeam`, `Title`.
+
+## 4) Produced marts
 
 - `dim_marketing_client`
 - `fct_marketing_project_pipeline`
 - `fct_marketing_client_feedback`
+- `fct_marketing_workforce_costs`

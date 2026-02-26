@@ -1,8 +1,8 @@
 select
-    projectid as project_id,
+    cast(projectid as varchar) as project_id,
     created_at,
-    clientid as client_id,
-    unitid as business_unit_id,
+    cast(clientid as varchar) as client_id,
+    cast(unitid as varchar) as business_unit_id,
     name as project_name,
     type as project_type,
     price,

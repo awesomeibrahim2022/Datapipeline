@@ -5,8 +5,19 @@ sources:
     database: "{{ var('raw_database', target.database) }}"
     schema: "{{ var('raw_schema', 'PUBLIC') }}"
     tables:
+      - name: BusinessUnit
       - name: Client
-      - name: Project
-      - name: Deliverable
-      - name: ProjectExpense
       - name: ClientFeedbackInitial
+      - name: Consultant
+      - name: ConsultantDeliverable
+      - name: ConsultantTitleHistory
+      - name: Deliverable
+      - name: IndirectCosts
+      - name: Location
+      - name: NonBillable
+      - name: Payroll
+      - name: Project
+      - name: ProjectBillingRate
+      - name: ProjectExpense
+      - name: ProjectTeam
+      - name: Title

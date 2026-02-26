@@ -1,7 +1,7 @@
 select
-    recordid as expense_id,
-    projectid as project_id,
-    deliverableid as deliverable_id,
+    cast(recordid as varchar) as expense_id,
+    cast(projectid as varchar) as project_id,
+    cast(deliverableid as varchar) as deliverable_id,
     date as expense_ts,
     amount,
     description,

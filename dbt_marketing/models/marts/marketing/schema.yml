@@ -22,3 +22,11 @@ models:
     columns:
       - name: feedback_id
         tests: [not_null, unique]
+
+  - name: fct_marketing_workforce_costs
+    description: Monthly workforce utilization and indirect cost rollup for marketing and planning.
+    columns:
+      - name: year_month
+        tests: [not_null]
+      - name: business_unit_id
+        tests: [not_null]
