@@ -24,3 +24,9 @@ models:
       +materialized: table
       marketing:
         +schema: marketing
+      project_management:
+        +schema: project_management
+      hr:
+        +schema: hr
+      business_dev:
+        +schema: business_dev

@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: fct_business_dev_client_growth
+    description: Business-development client growth and revenue/funnel activity summary.
+    columns:
+      - name: client_id
+        tests: [not_null, unique]
+      - name: client_name
+        tests: [not_null]

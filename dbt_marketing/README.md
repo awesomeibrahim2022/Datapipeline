@@ -41,3 +41,11 @@ dbt test
 - `fct_marketing_project_pipeline`
 - `fct_marketing_client_feedback`
 - `fct_marketing_workforce_costs`
+
+
+## 5) Additional datamarts
+
+- **Project Management**: `fct_project_management_delivery`
+- **HR Datamart**: `fct_hr_consultant_capacity`
+- **HR Datamart (workforce dimension)**: `dim_hr_workforce`
+- **Business Development**: `fct_business_dev_client_growth`
