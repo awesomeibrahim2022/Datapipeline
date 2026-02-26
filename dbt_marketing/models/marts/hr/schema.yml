@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: fct_hr_consultant_capacity
+    description: Monthly consultant capacity and utilization for HR planning.
+    columns:
+      - name: year_month
+        tests: [not_null]
+      - name: consultant_id
+        tests: [not_null]
+
+  - name: dim_hr_workforce
+    description: Consultant workforce dimension for HR reporting.
+    columns:
+      - name: consultant_id
+        tests: [not_null, unique]

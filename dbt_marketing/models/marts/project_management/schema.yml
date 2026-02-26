@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: fct_project_management_delivery
+    description: Project-management delivery performance, timeline and expense rollup.
+    columns:
+      - name: project_id
+        tests: [not_null, unique]
+      - name: client_id
+        tests: [not_null]
