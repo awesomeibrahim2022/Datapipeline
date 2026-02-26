@@ -1,0 +1,32 @@
+name: 'consulting_marketing_wh'
+version: '1.0.0'
+config-version: 2
+
+profile: 'consulting_marketing_wh'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  consulting_marketing_wh:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table
+      marketing:
+        +schema: marketing
+      project_management:
+        +schema: project_management
+      hr:
+        +schema: hr
+      business_dev:
+        +schema: business_dev
