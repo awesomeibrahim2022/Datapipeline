@@ -17,7 +17,7 @@ project_activity as (
 
 feedback as (
     select
-        try_to_varchar(clientid) as client_id,
+        clientid as client_id,
         count(*) as feedback_response_count
     from {{ source('core', 'ClientFeedbackInitial') }}
     group by 1
