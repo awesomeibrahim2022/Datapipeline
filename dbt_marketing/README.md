@@ -15,7 +15,7 @@ consulting_marketing_wh:
       role: ACCOUNTADMIN
       authenticator: externalbrowser
       warehouse: <warehouse_name>
-      database: QLITE_INGEST_DB_1772077572
+      database: SQLITE_INGEST_DB_1772077572
       schema: PUBLIC
       threads: 4
 ```
@@ -26,7 +26,7 @@ consulting_marketing_wh:
 cd dbt_marketing
 dbt deps
 # Optional vars if your raw tables are in a different DB/schema:
-# Optional override (defaults already set to QLITE_INGEST_DB_1772077572.PUBLIC):
+# Optional override (defaults already set to SQLITE_INGEST_DB_1772077572.PUBLIC):
 # dbt run --vars '{raw_database: OTHER_DB, raw_schema: OTHER_SCHEMA}'
 dbt run
 dbt test
@@ -34,7 +34,7 @@ dbt test
 
 ## 3) Raw tables expected
 
-Default raw location: `QLITE_INGEST_DB_1772077572.PUBLIC`.
+Default raw location: `SQLITE_INGEST_DB_1772077572.PUBLIC`.
 
 `BusinessUnit`, `Client`, `ClientFeedbackInitial`, `Consultant`, `ConsultantDeliverable`, `ConsultantTitleHistory`, `Deliverable`, `IndirectCosts`, `Location`, `NonBillable`, `Payroll`, `Project`, `ProjectBillingRate`, `ProjectExpense`, `ProjectTeam`, `Title`.
 
