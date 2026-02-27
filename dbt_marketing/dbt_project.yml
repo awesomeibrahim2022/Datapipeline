@@ -1,8 +1,8 @@
-name: 'consulting_marketing_wh'
+name: 'DBT_WH'
 version: '1.0.0'
 config-version: 2
 
-profile: 'consulting_marketing_wh'
+profile: 'DBT_WH'
 
 model-paths: ["models"]
 analysis-paths: ["analyses"]

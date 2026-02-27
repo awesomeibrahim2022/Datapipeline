@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: core
-    database: "{{ var('raw_database', target.database) }}"
+    database: "{{ var('raw_database', 'SQLITE_INGEST_DB_1772077572') }}"
     schema: "{{ var('raw_schema', 'PUBLIC') }}"
     tables:
       - name: BusinessUnit

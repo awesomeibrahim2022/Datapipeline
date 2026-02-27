@@ -9,15 +9,16 @@ consulting_marketing_wh:
   target: dev
   outputs:
     dev:
-      type: snowflake
-      account: <account_identifier>
-      user: <username>
-      role: ACCOUNTADMIN
-      authenticator: externalbrowser
-      warehouse: <warehouse_name>
-      database: <analytics_database>
-      schema: <analytics_schema>
-      threads: 4
+        type: snowflake
+        account: NWLBALI-XLB64593
+        user: AWESOMEIBRAHIM2022
+        role: ACCOUNTADMIN
+        authenticator: externalbrowser
+        warehouse: COMPUTE_WH
+        database: SQLITE_INGEST_DB_1772077572
+        schema: PUBLIC
+        threads: 4
+
 ```
 
 ## 2) Run
